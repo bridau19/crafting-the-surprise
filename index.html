@@ -7,51 +7,62 @@
     <title>Penguin</title>
   </head>
   <body>
-    <div class="dropdown">
-      <input onclick="reveal()" type="checkbox" id="reveal" />
-
-      <p>I can't see</p>
-      <div class="dropdown-content">
-        <button onclick="showGlasses();">Are those my glasses?</button>
-      </div>
-    </div>
+    <button style="display: none" id="myButton" onclick="showBox()">
+      what's this?
+    </button>
     <div class="container">
-      <input
-        type="range"
-        min="10"
-        max="1200"
-        value="10"
-        class="slider"
-        id="myRange"
-      />
-      <input
-        type="range"
-        min="10"
-        max="1200"
-        value="10"
-        class="slider"
-        id="myRange2"
-      />
-      <input
-        onchange="randomBox()"
-        type="checkbox"
-        id="check-three"
-        name="three"
-      />
+      <div class="main_container">
+        <!-- show button checkbox -->
+        <input type="checkbox" onclick="setTimeout(showButton, 3000);" />
+        <!-- reveal slider checkbox -->
+        <input
+          style="display: none"
+          type="checkbox"
+          id="reveal"
+          onclick="reveal()"
+        />
 
-      <input onclick="change()" type="checkbox" id="check-one" name="one" />
-      <input onclick="changeUp()" type="checkbox" id="check-two" name="two" />
+        <!-- dropdown -->
+        <div class="dropdown">
+          <p>I can't see</p>
+          <div class="dropdown-content">
+            <button onclick="showGlasses();">Are those my glasses?</button>
+          </div>
+        </div>
 
-      <div class="radio">
-        <input onclick="move()" type="radio" name="radio" id="radio-one" />
-        <input onclick="move1()" type="radio" name="radio" id="radio-two" />
-        <input onclick="move2()" type="radio" name="radio" id="radio-three" />
-        <input onclick="move3()" type="radio" name="radio" id="radio-four" />
-        <input onclick="move4()" type="radio" name="radio" id="radio-five" />
+        <!-- glasses -->
+        <img src="images/glasses.png" alt="black round glasses" id="glasses" />
+
+        <!-- slider one -->
+        <input
+          type="range"
+          min="10"
+          max="1200"
+          value="10"
+          class="slider"
+          id="myRange"
+        />
+
+        <!-- slider two -->
+        <input
+          type="range"
+          min="10"
+          max="1200"
+          value="10"
+          class="slider"
+          id="myRange2"
+        />
+      </div>
+      <div class="side_panel">
+        <input onclick="change()" type="radio" name="radio" id="radio" />
+        <input onclick="change2()" type="radio" name="radio" id="radio2" />
+        <input onclick="change3()" type="radio" name="radio" id="radio3" />
+        <input onclick="change4()" type="radio" name="radio" id="radio4" />
+        <input onclick="change5()" type="radio" name="radio" id="radio5" />
+        <input onclick="change6()" type="radio" name="radio" id="radio6" />
       </div>
     </div>
 
-    <img src="images/glasses.png" alt="black round glasses" id="glasses" />
     <script src="script.js"></script>
   </body>
 </html>
