@@ -8,6 +8,8 @@
   </head>
   <body>
     <div class="dropdown">
+      <input onclick="reveal()" type="checkbox" id="reveal" />
+
       <p>I can't see</p>
       <div class="dropdown-content">
         <button onclick="showGlasses();">Are those my glasses?</button>
@@ -23,7 +25,15 @@
         id="myRange"
       />
       <input
-        onclick="randomBox()"
+        type="range"
+        min="10"
+        max="1200"
+        value="10"
+        class="slider"
+        id="myRange2"
+      />
+      <input
+        onchange="randomBox()"
         type="checkbox"
         id="check-three"
         name="three"

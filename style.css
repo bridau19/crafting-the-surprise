@@ -30,6 +30,9 @@ body {
   align-items: flex-end;
   height: 70vh;
 }
+#myRange2 {
+  display: none;
+}
 
 .dropdown-content {
   display: none;
