@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Penguin</title>
+  </head>
+  <body>
+    <div class="dropdown">
+      <p>I can't see</p>
+      <div class="dropdown-content">
+        <button onclick="showGlasses();">Are those my glasses?</button>
+      </div>
+    </div>
+    <div class="container">
+      <input
+        type="range"
+        min="10"
+        max="1200"
+        value="10"
+        class="slider"
+        id="myRange"
+      />
+      <input
+        onclick="randomBox()"
+        type="checkbox"
+        id="check-three"
+        name="three"
+      />
+
+      <input onclick="change()" type="checkbox" id="check-one" name="one" />
+      <input onclick="changeUp()" type="checkbox" id="check-two" name="two" />
+
+      <div class="radio">
+        <input onclick="move()" type="radio" name="radio" id="radio-one" />
+        <input onclick="move1()" type="radio" name="radio" id="radio-two" />
+        <input onclick="move2()" type="radio" name="radio" id="radio-three" />
+        <input onclick="move3()" type="radio" name="radio" id="radio-four" />
+        <input onclick="move4()" type="radio" name="radio" id="radio-five" />
+      </div>
+    </div>
+
+    <img src="images/glasses.png" alt="black round glasses" id="glasses" />
+    <script src="script.js"></script>
+  </body>
+</html>

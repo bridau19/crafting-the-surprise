@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("images/penguin.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 100vh;
+}
+
+.container img {
+  width: 40%;
+}
+
+#glasses {
+  position: absolute;
+  top: 10vh;
+  left: 630px;
+  max-width: 10%;
+  height: auto;
+  display: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  height: 70vh;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+p {
+  padding: 0 0 0 7vw;
+  margin-top: 10vh;
+}
